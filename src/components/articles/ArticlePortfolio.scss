@@ -93,3 +93,96 @@ div.article-portfolio-item-body {
 div.article-portfolio-item-footer {
     margin-top: 10px;
 }
+
+/* ============ SEARCH BAR ============ */
+div.article-portfolio-search {
+    position: relative;
+    width: 100%;
+    margin: 0.75rem 0 1.25rem;
+}
+
+input.article-portfolio-search-input {
+    width: 100%;
+    padding: 0.55rem 2.5rem 0.55rem 2.25rem;
+    border: 1px solid var(--theme-card-background);
+    border-radius: $standard-border-radius;
+    background-color: var(--theme-boards-background);
+    color: var(--theme-texts-light-1);
+    font-size: 0.875rem;
+    outline: none;
+    transition: border-color 0.15s ease;
+
+    &:focus {
+        border-color: var(--theme-primary);
+    }
+}
+
+i.article-portfolio-search-icon {
+    position: absolute;
+    left: 0.65rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.45;
+    font-size: 0.8rem;
+    pointer-events: none;
+}
+
+button.article-portfolio-search-clear {
+    position: absolute;
+    right: 0.65rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    color: var(--theme-texts-light-1);
+    padding: 0.2rem 0.3rem;
+    line-height: 1;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+/* Visually hidden — accessible to screen readers only */
+div.article-portfolio-search-results-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+/* ============ EMPTY STATE ============ */
+div.article-portfolio-empty-state {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    opacity: 0.75;
+
+    div.article-portfolio-empty-state-icon {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    p.article-portfolio-empty-state-text {
+        font-size: 0.95rem;
+        color: var(--theme-texts-light-1);
+        margin-bottom: 0;
+    }
+}
+
+/* Screen-reader-only utility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
