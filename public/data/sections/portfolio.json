@@ -66,51 +66,232 @@
             "items": [
                 {
                     "id": 1,
-                    "categoryId": "category_utilities",
-                    "img": "images/pictures/portfolio-project-logo-3.png",
+                    "categoryId": "category_web",
+                    "img": "images/pictures/portfolio-project-logo-1.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "preview": {
                         "links": [
-                            {"href": "https://github.com", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"},
-                            {"href": "https://npm.com", "tooltipString": "see_on_npm", "faIcon": "fa-brands fa-npm"}
+                            {"href": "https://github.com/vinhnh/railsshop", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
                         "screenshots": [
                             "images/pictures/screenshot-demo-landscape-1.png",
                             "images/pictures/screenshot-demo-landscape-2.png",
-                            "images/pictures/screenshot-demo-landscape-3.png",
-                            "images/pictures/screenshot-demo-landscape-4.png",
-                            "images/pictures/screenshot-demo-landscape-5.png"
+                            "images/pictures/screenshot-demo-landscape-3.png"
                         ],
                         "screenshotsAspectRatio": "16:9",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=PnV8p1xm7-o"
+                        "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "BrainPulse",
-                            "text": "A <b>RESTful API</b> backend built with <b>Node.js</b>, designed for high-performance data processing and real-time event handling.",
-                            "tags": ["API", "REST", "Backend"]
+                            "title": "RailsShop",
+                            "text": "A full-featured e-commerce platform built with <b>Ruby on Rails 7</b> and <b>Stripe</b>. Supports product management, order tracking, inventory control, and <b>real-time notifications</b> via ActionCable.",
+                            "tags": ["Ruby on Rails", "PostgreSQL", "Stripe", "Sidekiq"]
                         },
                         "es": {
-                            "text": "Una <b>API RESTful</b> construida con <b>Node.js</b>, diseñada para el procesamiento de datos de alto rendimiento y la gestión de eventos en tiempo real.",
-                            "tags": ["API", "REST", "Backend"]
+                            "text": "Una plataforma de comercio electrónico completa construida con <b>Ruby on Rails 7</b> y <b>Stripe</b>. Soporta gestión de productos, seguimiento de pedidos, control de inventario y <b>notificaciones en tiempo real</b> vía ActionCable.",
+                            "tags": ["Ruby on Rails", "PostgreSQL", "Stripe", "Sidekiq"]
                         },
                         "fr": {
-                            "text": "Un backend <b>API RESTful</b> construit avec <b>Node.js</b>, conçu pour le traitement de données haute performance et la gestion d'événements en temps réel.",
-                            "tags": ["API", "REST", "Backend"]
+                            "text": "Une plateforme e-commerce complète construite avec <b>Ruby on Rails 7</b> et <b>Stripe</b>. Prend en charge la gestion des produits, le suivi des commandes, le contrôle des stocks et les <b>notifications en temps réel</b> via ActionCable.",
+                            "tags": ["Ruby on Rails", "PostgreSQL", "Stripe", "Sidekiq"]
                         },
                         "ko": {
-                            "text": "<b>Node.js</b>로 구축된 <b>RESTful API</b> 백엔드로, 고성능 데이터 처리 및 실시간 이벤트 처리용으로 설계되었습니다.",
-                            "tags": ["API", "REST", "Backend"]
+                            "text": "<b>Ruby on Rails 7</b>과 <b>Stripe</b>로 구축된 완전한 기능의 이커머스 플랫폼. 제품 관리, 주문 추적, 재고 관리 및 ActionCable을 통한 <b>실시간 알림</b>을 지원합니다.",
+                            "tags": ["Ruby on Rails", "PostgreSQL", "Stripe", "Sidekiq"]
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "categoryId": "category_apps",
-                    "img": "images/pictures/portfolio-project-logo-7.png",
+                    "categoryId": "category_web",
+                    "img": "images/pictures/portfolio-project-logo-5.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/vinhnh/techblog", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"},
+                            {"href": "https://techblog.vinhnh.dev", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [
+                            "images/pictures/screenshot-demo-landscape-4.png",
+                            "images/pictures/screenshot-demo-landscape-5.png"
+                        ],
+                        "screenshotsAspectRatio": "16:9",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "TechBlog",
+                            "text": "A developer blog engine built with <b>Rails 7 + Hotwire</b> and <b>Tailwind CSS</b>. Features <b>Markdown rendering</b>, syntax highlighting, tag-based search, and an admin panel for post management.",
+                            "tags": ["Ruby on Rails", "Hotwire", "Tailwind CSS", "Markdown"]
+                        },
+                        "es": {
+                            "text": "Un motor de blog para desarrolladores construido con <b>Rails 7 + Hotwire</b> y <b>Tailwind CSS</b>. Incluye <b>renderizado Markdown</b>, resaltado de sintaxis, búsqueda por etiquetas y panel de administración.",
+                            "tags": ["Ruby on Rails", "Hotwire", "Tailwind CSS", "Markdown"]
+                        },
+                        "fr": {
+                            "text": "Un moteur de blog pour développeurs construit avec <b>Rails 7 + Hotwire</b> et <b>Tailwind CSS</b>. Comprend le <b>rendu Markdown</b>, la coloration syntaxique, la recherche par tags et un panneau d'administration.",
+                            "tags": ["Ruby on Rails", "Hotwire", "Tailwind CSS", "Markdown"]
+                        },
+                        "ko": {
+                            "text": "<b>Rails 7 + Hotwire</b>와 <b>Tailwind CSS</b>로 구축된 개발자 블로그 엔진. <b>Markdown 렌더링</b>, 구문 강조, 태그 기반 검색, 게시물 관리 어드민 패널을 제공합니다.",
+                            "tags": ["Ruby on Rails", "Hotwire", "Tailwind CSS", "Markdown"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "categoryId": "category_web",
+                    "img": "images/pictures/portfolio-project-logo-3.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/vinhnh/jobtracker", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "16:9",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "JobTracker",
+                            "text": "A job application tracking web app built with <b>Rails + PostgreSQL</b>. Features <b>Kanban-style pipeline</b>, interview scheduling, company notes, and CSV export for job seekers managing their search.",
+                            "tags": ["Ruby on Rails", "PostgreSQL", "Stimulus", "Tailwind CSS"]
+                        },
+                        "es": {
+                            "text": "Una aplicación web de seguimiento de solicitudes de empleo construida con <b>Rails + PostgreSQL</b>. Incluye <b>pipeline estilo Kanban</b>, programación de entrevistas, notas de empresa y exportación CSV.",
+                            "tags": ["Ruby on Rails", "PostgreSQL", "Stimulus", "Tailwind CSS"]
+                        },
+                        "fr": {
+                            "text": "Une application web de suivi de candidatures construite avec <b>Rails + PostgreSQL</b>. Comprend un <b>pipeline style Kanban</b>, la planification d'entretiens, des notes sur les entreprises et l'export CSV.",
+                            "tags": ["Ruby on Rails", "PostgreSQL", "Stimulus", "Tailwind CSS"]
+                        },
+                        "ko": {
+                            "text": "<b>Rails + PostgreSQL</b>로 구축된 취업 지원 추적 웹앱. <b>칸반 스타일 파이프라인</b>, 면접 일정, 회사 노트, CSV 내보내기 기능을 제공합니다.",
+                            "tags": ["Ruby on Rails", "PostgreSQL", "Stimulus", "Tailwind CSS"]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "categoryId": "category_utilities",
+                    "img": "",
+                    "faIcon": "fa-solid fa-comment-dots",
+                    "faIconColors": {"bg": "#CC0000", "fill": "#FFFFFF"},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/vinhnh/chatapi", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"},
+                            {"href": "https://npm.com", "tooltipString": "see_on_npm", "faIcon": "fa-brands fa-npm"}
+                        ],
+                        "screenshots": [
+                            "images/pictures/screenshot-demo-landscape-1.png",
+                            "images/pictures/screenshot-demo-landscape-2.png"
+                        ],
+                        "screenshotsAspectRatio": "16:9",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "ChatAPI",
+                            "text": "A real-time chat <b>REST API</b> built with <b>Rails + ActionCable + Redis</b>. Supports multi-room messaging, read receipts, user presence, and WebSocket connections — designed to be embedded in any frontend.",
+                            "tags": ["Rails API", "ActionCable", "Redis", "WebSocket"]
+                        },
+                        "es": {
+                            "text": "Una <b>REST API</b> de chat en tiempo real construida con <b>Rails + ActionCable + Redis</b>. Soporta mensajería multi-sala, confirmaciones de lectura, presencia de usuarios y conexiones WebSocket.",
+                            "tags": ["Rails API", "ActionCable", "Redis", "WebSocket"]
+                        },
+                        "fr": {
+                            "text": "Une <b>API REST</b> de chat en temps réel construite avec <b>Rails + ActionCable + Redis</b>. Prend en charge la messagerie multi-salles, les accusés de lecture, la présence des utilisateurs et les connexions WebSocket.",
+                            "tags": ["Rails API", "ActionCable", "Redis", "WebSocket"]
+                        },
+                        "ko": {
+                            "text": "<b>Rails + ActionCable + Redis</b>로 구축된 실시간 채팅 <b>REST API</b>. 멀티룸 메시징, 읽음 확인, 사용자 접속 상태, WebSocket 연결을 지원합니다.",
+                            "tags": ["Rails API", "ActionCable", "Redis", "WebSocket"]
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "categoryId": "category_utilities",
+                    "img": "images/pictures/portfolio-project-logo-4.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/vinhnh/invoicegen", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"},
+                            {"href": "https://rubygems.org", "tooltipString": "open_website", "faIcon": "fa-solid fa-gem"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "InvoiceGen",
+                            "text": "A <b>Ruby gem</b> for generating professional PDF invoices in Rails applications. Integrates with <b>Prawn PDF</b>, supports multi-currency, VAT calculation, and customizable templates for SaaS billing workflows.",
+                            "tags": ["Ruby Gem", "PDF", "Prawn", "Billing"]
+                        },
+                        "es": {
+                            "text": "Una <b>gema Ruby</b> para generar facturas PDF profesionales en aplicaciones Rails. Se integra con <b>Prawn PDF</b>, soporta múltiples monedas, cálculo de IVA y plantillas personalizables para flujos de facturación SaaS.",
+                            "tags": ["Ruby Gem", "PDF", "Prawn", "Facturación"]
+                        },
+                        "fr": {
+                            "text": "Une <b>gem Ruby</b> pour générer des factures PDF professionnelles dans les applications Rails. S'intègre avec <b>Prawn PDF</b>, prend en charge multi-devises, calcul TVA et templates personnalisables.",
+                            "tags": ["Ruby Gem", "PDF", "Prawn", "Facturation"]
+                        },
+                        "ko": {
+                            "text": "Rails 애플리케이션에서 전문적인 PDF 인보이스를 생성하는 <b>Ruby 젬</b>. <b>Prawn PDF</b>와 통합되며 다중 통화, VAT 계산, SaaS 결제 워크플로우를 위한 커스텀 템플릿을 지원합니다.",
+                            "tags": ["Ruby Gem", "PDF", "Prawn", "청구"]
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "categoryId": "category_web",
+                    "img": "images/pictures/portfolio-project-logo-6.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/vinhnh/devportal", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"},
+                            {"href": "https://devportal.vinhnh.dev", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [
+                            "images/pictures/screenshot-demo-landscape-3.png",
+                            "images/pictures/screenshot-demo-landscape-4.png",
+                            "images/pictures/screenshot-demo-landscape-5.png"
+                        ],
+                        "screenshotsAspectRatio": "16:9",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "DevPortal",
+                            "text": "An internal developer portal built with <b>Rails + React</b> that aggregates team metrics, PR statuses, CI/CD build results, and documentation. Integrates with <b>GitHub API</b> and <b>Jira</b> for workflow visibility.",
+                            "tags": ["Ruby on Rails", "React", "GitHub API", "PostgreSQL"]
+                        },
+                        "es": {
+                            "text": "Un portal de desarrolladores interno construido con <b>Rails + React</b> que agrega métricas de equipo, estados de PR, resultados de CI/CD y documentación. Se integra con la <b>API de GitHub</b> y <b>Jira</b>.",
+                            "tags": ["Ruby on Rails", "React", "GitHub API", "PostgreSQL"]
+                        },
+                        "fr": {
+                            "text": "Un portail développeur interne construit avec <b>Rails + React</b> qui agrège les métriques d'équipe, les statuts de PR, les résultats CI/CD et la documentation. S'intègre avec l'<b>API GitHub</b> et <b>Jira</b>.",
+                            "tags": ["Ruby on Rails", "React", "GitHub API", "PostgreSQL"]
+                        },
+                        "ko": {
+                            "text": "<b>Rails + React</b>로 구축된 내부 개발자 포털. 팀 메트릭, PR 상태, CI/CD 빌드 결과, 문서를 통합합니다. <b>GitHub API</b>와 <b>Jira</b>와 연동하여 워크플로우 가시성을 제공합니다.",
+                            "tags": ["Ruby on Rails", "React", "GitHub API", "PostgreSQL"]
+                        }
+                    }
+                },
+                {
+                    "id": 7,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-list-check",
+                    "faIconColors": {"bg": "#336791", "fill": "#FFFFFF"},
                     "preview": {
                         "links": [
                             {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
@@ -119,309 +300,62 @@
                         "screenshots": [
                             "images/pictures/screenshot-demo-portrait-1.png",
                             "images/pictures/screenshot-demo-portrait-2.png",
-                            "images/pictures/screenshot-demo-portrait-3.png",
-                            "images/pictures/screenshot-demo-portrait-4.png",
-                            "images/pictures/screenshot-demo-portrait-5.png",
-                            "images/pictures/screenshot-demo-portrait-6.png"
+                            "images/pictures/screenshot-demo-portrait-3.png"
                         ],
                         "screenshotsAspectRatio": "9:16",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=TfgBHC5gvTI"
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "MailM8",
-                            "text": "A cross-platform email client built with <b>Flutter</b>, providing efficient communication with an intuitive UI for <b>managing emails</b>.",
-                            "tags": ["Flutter", "E-mail", "Communication"]
-                        },
-                        "es": {
-                            "text": "Un cliente de correo electrónico multiplataforma construido con <b>Flutter</b>, que ofrece comunicación eficiente y una interfaz intuitiva para la <b>gestión de correos electrónicos</b>.",
-                            "tags": ["Flutter", "Correo", "Comunicación"]
-                        },
-                        "fr": {
-                            "text": "Un client de messagerie multiplateforme construit avec <b>Flutter</b>, offrant une communication efficace et une interface intuitive pour <b>gérer les e-mails</b>.",
-                            "tags": ["Flutter", "E-mail", "Communication"]
-                        },
-                        "ko": {
-                            "text": "<b>Flutter</b>로 구축된 크로스플랫폼 이메일 클라이언트로, 이메일 <b>관리</b>를 위한 직관적인 UI를 통해 효율적인 소통을 제공합니다.",
-                            "tags": ["Flutter", "이메일", "소통"]
-                        }
-                    }
-                },
-                {
-                    "id": 3,
-                    "categoryId": "category_apps",
-                    "img": "images/pictures/portfolio-project-logo-6.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
-                        ],
-                        "screenshots": [
-                            "images/pictures/screenshot-demo-landscape-1.png",
-                            "images/pictures/screenshot-demo-landscape-2.png",
-                            "images/pictures/screenshot-demo-landscape-3.png",
-                            "images/pictures/screenshot-demo-landscape-4.png",
-                            "images/pictures/screenshot-demo-landscape-5.png"
-                        ],
-                        "screenshotsAspectRatio": "16:9",
                         "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "Light Blue",
-                            "text": "A fully-featured productivity app developed with <b>React Native</b>, enabling users to organize tasks, notes, and projects across multiple devices. It offers <b>cloud sync</b>, intuitive UI, and collaboration features.",
-                            "tags": ["React", "Organization", "Notes"]
+                            "title": "TaskFlow Mobile",
+                            "text": "A cross-platform task management app with a <b>Rails API backend</b>. Features <b>team collaboration</b>, file attachments via S3, push notifications through Sidekiq, and offline sync powered by local storage.",
+                            "tags": ["Rails API", "React Native", "Sidekiq", "AWS S3"]
                         },
                         "es": {
-                            "text": "Una app de productividad con todas las funciones, desarrollada con <b>React Native</b>, que permite a los usuarios organizar tareas, notas y proyectos en varios dispositivos. Ofrece <b>sincronización en la nube</b>, interfaz intuitiva y características de colaboración.",
-                            "tags": ["React", "Organización", "Notas"]
+                            "text": "Una app de gestión de tareas multiplataforma con <b>backend Rails API</b>. Incluye <b>colaboración en equipo</b>, archivos adjuntos vía S3, notificaciones push a través de Sidekiq y sincronización offline.",
+                            "tags": ["Rails API", "React Native", "Sidekiq", "AWS S3"]
                         },
                         "fr": {
-                            "text": "Une application de productivité complète développée avec <b>React Native</b>, permettant aux utilisateurs d'organiser tâches, notes et projets sur plusieurs appareils. Elle offre <b>synchronisation cloud</b>, interface intuitive et fonctionnalités de collaboration.",
-                            "tags": ["React", "Organisation", "Notes"]
+                            "text": "Une application de gestion de tâches multiplateforme avec un <b>backend Rails API</b>. Comprend la <b>collaboration en équipe</b>, des pièces jointes via S3, des notifications push via Sidekiq et la synchronisation hors ligne.",
+                            "tags": ["Rails API", "React Native", "Sidekiq", "AWS S3"]
                         },
                         "ko": {
-                            "text": "<b>React Native</b>로 개발된 기능이 풍부한 생산성 앱으로, 사용자가 여러 기기에서 작업, 메모, 프로젝트를 <b>클라우드 동기화</b>와 직관적인 UI로 관리할 수 있습니다.",
-                            "tags": ["React", "조직", "메모"]
-                        }
-                    }
-                },
-                {
-                    "id": 4,
-                    "categoryId": "category_web",
-                    "img": "images/pictures/portfolio-project-logo-1.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-                            {"href": "https://cash.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=MQe_MoJ7Iww"
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "SmartCash",
-                            "text": "A finance website built using <b>Next.js</b>, allowing users to <b>track budgets</b> and manage their money with interactive charts and insights.",
-                            "tags": ["Next.js", "Finance", "Money"]
-                        },
-                        "es": {
-                            "title": "SmartCash",
-                            "text": "Un sitio web financiero construido con <b>Next.js</b>, que permite a los usuarios <b>seguir presupuestos</b> y gestionar su dinero con gráficos interactivos e ideas.",
-                            "tags": ["Next.js", "Finanzas", "Dinero"]
-                        },
-                        "fr": {
-                            "title": "SmartCash",
-                            "text": "Un site web financier construit avec <b>Next.js</b>, permettant aux utilisateurs de <b>suivre les budgets</b> et de gérer leur argent avec des graphiques interactifs et des analyses.",
-                            "tags": ["Next.js", "Finance", "Argent"]
-                        },
-                        "ko": {
-                            "title": "SmartCash",
-                            "text": "<b>Next.js</b>로 구축된 금융 웹사이트로, 사용자가 <b>예산을 추적</b>하고 상호작용하는 차트와 통찰력으로 자금을 관리할 수 있습니다.",
-                            "tags": ["Next.js", "금융", "돈"]
-                        }
-                    }
-                },
-                {
-                    "id": 5,
-                    "categoryId": "category_apps",
-                    "img": "images/pictures/portfolio-project-logo-2.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Snappy",
-                            "text": "A powerful photography app designed with <b>Swift</b> for iOS and Android, featuring <b>advanced camera controls</b>, editing tools, and AI-powered filters for quick photo enhancements.",
-                            "tags": ["Swift", "Photography", "Camera"]
-                        },
-                        "es": {
-                            "title": "Snappy",
-                            "text": "Una app de fotografía potente diseñada con <b>Swift</b> para iOS y Android, con <b>controles avanzados de cámara</b>, herramientas de edición y filtros potenciados por IA para mejoras rápidas de fotos.",
-                            "tags": ["Swift", "Fotografía", "Cámara"]
-                        },
-                        "fr": {
-                            "title": "Snappy",
-                            "text": "Une application de photographie puissante conçue avec <b>Swift</b> pour iOS et Android, avec des <b>contrôles avancés de la caméra</b>, des outils d'édition et des filtres IA pour des améliorations rapides des photos.",
-                            "tags": ["Swift", "Photographie", "Caméra"]
-                        },
-                        "ko": {
-                            "title": "Snappy",
-                            "text": "<b>Swift</b>로 설계된 강력한 사진 앱으로, iOS 및 Android에서 <b>고급 카메라 제어</b>, 편집 도구, AI 기반 필터를 통해 빠르게 사진을 보정할 수 있습니다.",
-                            "tags": ["Swift", "사진", "카메라"]
-                        }
-                    }
-                },
-                {
-                    "id": 6,
-                    "categoryId": "category_web",
-                    "img": "images/pictures/portfolio-project-logo-5.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-                            {"href": "https://google.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Sweet Scoops",
-                            "text": "A recipe website built with <b>WordPress</b> and WooCommerce, featuring a rich collection of <b>dessert recipes</b> and an integrated e-commerce platform.",
-                            "tags": ["WooCommerce", "Food", "Desserts"]
-                        },
-                        "es": {
-                            "title": "Sweet Scoops",
-                            "text": "Un sitio web de recetas construido con <b>WordPress</b> y WooCommerce, con una rica colección de <b>recetas de postres</b> y una plataforma de comercio electrónico integrada.",
-                            "tags": ["WooCommerce", "Comida", "Postres"]
-                        },
-                        "fr": {
-                            "title": "Sweet Scoops",
-                            "text": "Un site de recettes construit avec <b>WordPress</b> et WooCommerce, présentant une riche collection de <b>recettes de desserts</b> et une plateforme de commerce électronique intégrée.",
-                            "tags": ["WooCommerce", "Cuisine", "Desserts"]
-                        },
-                        "ko": {
-                            "title": "Sweet Scoops",
-                            "text": "<b>WordPress</b>와 WooCommerce로 구축된 레시피 웹사이트로, 풍부한 <b>디저트 레시피</b> 모음과 통합된 전자상거래 플랫폼을 제공합니다.",
-                            "tags": ["WooCommerce", "음식", "디저트"]
-                        }
-                    }
-                },
-                {
-                    "id": 7,
-                    "categoryId": "category_web",
-                    "img": "",
-                    "faIcon": "fa-solid fa-guitar",
-                    "faIconColors": {"bg": "#7671AA", "fill": "#EEEEEE"},
-                    "preview": {
-                        "links": [
-                            {"href": "https://google.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "RockVerse",
-                            "text": "A dynamic music and entertainment website developed with <b>Django</b>, showcasing rock music news, events, and <b>streaming content</b>.",
-                            "tags": ["Django", "Music", "Rock"]
-                        },
-                        "es": {
-                            "title": "RockVerse",
-                            "text": "Un sitio web dinámico de música y entretenimiento desarrollado con <b>Django</b>, que muestra noticias de música rock, eventos y <b>contenido en streaming</b>.",
-                            "tags": ["Django", "Música", "Rock"]
-                        },
-                        "fr": {
-                            "title": "RockVerse",
-                            "text": "Un site web de musique et de divertissement dynamique développé avec <b>Django</b>, mettant en avant des nouvelles, événements et <b>contenu en streaming</b> sur le rock.",
-                            "tags": ["Django", "Musique", "Rock"]
-                        },
-                        "ko": {
-                            "title": "RockVerse",
-                            "text": "<b>Django</b>로 개발된 동적인 음악 및 엔터테인먼트 웹사이트로, 록 음악 뉴스, 이벤트 및 <b>스트리밍 콘텐츠</b>를 제공합니다.",
-                            "tags": ["Django", "음악", "록"]
+                            "text": "<b>Rails API 백엔드</b>를 갖춘 크로스플랫폼 작업 관리 앱. <b>팀 협업</b>, S3를 통한 파일 첨부, Sidekiq을 통한 푸시 알림, 로컬 스토리지 기반 오프라인 동기화를 제공합니다.",
+                            "tags": ["Rails API", "React Native", "Sidekiq", "AWS S3"]
                         }
                     }
                 },
                 {
                     "id": 8,
                     "categoryId": "category_utilities",
-                    "img": "images/pictures/portfolio-project-logo-4.png",
+                    "img": "images/pictures/portfolio-project-logo-7.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "preview": {
                         "links": [
-
+                            {"href": "https://github.com/vinhnh/rails-audit-log", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=bf3Lz33nHy0"
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Soccer Analytics",
-                            "text": "An AI-powered sports analytics platform built with <b>Python</b> and <b>TensorFlow</b>, offering detailed soccer <b>predictions</b> and team management tools.",
-                            "tags": ["AI", "Prediction", "Soccer"]
-                        },
-                        "es": {
-                            "title": "Soccer Analytics",
-                            "text": "Una plataforma de análisis deportivo impulsada por IA construida con <b>Python</b> y <b>TensorFlow</b>, que ofrece <b>predicciones</b> detalladas de fútbol y herramientas de gestión de equipos.",
-                            "tags": ["IA", "Predicción", "Fútbol"]
-                        },
-                        "fr": {
-                            "title": "Soccer Analytics",
-                            "text": "Une plateforme d'analytique sportive alimentée par IA construite avec <b>Python</b> et <b>TensorFlow</b>, offrant des <b>prédictions</b> détaillées pour le football et des outils de gestion d'équipe.",
-                            "tags": ["IA", "Prédiction", "Football"]
-                        },
-                        "ko": {
-                            "title": "Soccer Analytics",
-                            "text": "<b>Python</b> 및 <b>TensorFlow</b>로 구축된 AI 기반 스포츠 분석 플랫폼으로, 축구에 대한 <b>예측</b> 및 팀 관리 도구를 제공합니다.",
-                            "tags": ["AI", "예측", "축구"]
-                        }
-                    }
-                },
-                {
-                    "id": 9,
-                    "categoryId": "category_apps",
-                    "img": "",
-                    "faIcon": "fa-solid fa-truck-fast",
-                    "faIconColors": {"bg": "#007396", "fill": "#EEEEEE"},
-                    "preview": {
-                        "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
-                            {"href": "https://windows.com", "tooltipString": "see_on_windows_store", "faIcon": "fa-brands fa-windows"}
-                        ],
-                        "screenshots": [
-
-                        ],
+                        "screenshots": [],
                         "screenshotsAspectRatio": "",
                         "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "QuickDrop",
-                            "text": "A cross-platform delivery app built with <b>React Native</b> and a <b>Node.js backend</b>, featuring <b>real-time tracking</b> and seamless integration with multiple platforms.",
-                            "tags": ["React Native", "Delivery", "Real-Time Tracking"]
+                            "title": "AuditLog Gem",
+                            "text": "An open-source <b>Rails gem</b> for automatic model audit logging. Records <b>who changed what and when</b> with diff tracking, integrates with Devise for user attribution, and supports PostgreSQL JSONB for fast querying.",
+                            "tags": ["Ruby Gem", "Open Source", "PostgreSQL", "Devise"]
                         },
                         "es": {
-                            "title": "QuickDrop",
-                            "text": "Una app de entregas multiplataforma construida con <b>React Native</b> y un backend de <b>Node.js</b>, con <b>seguimiento en tiempo real</b> e integración perfecta en múltiples plataformas.",
-                            "tags": ["React Native", "Entrega", "Seguimiento"]
+                            "text": "Una <b>gema Rails</b> de código abierto para registro de auditoría de modelos automático. Registra <b>quién cambió qué y cuándo</b> con seguimiento de diferencias, integración con Devise y soporte para PostgreSQL JSONB.",
+                            "tags": ["Ruby Gem", "Open Source", "PostgreSQL", "Devise"]
                         },
                         "fr": {
-                            "title": "QuickDrop",
-                            "text": "Une application de livraison multiplateforme construite avec <b>React Native</b> et un backend <b>Node.js</b>, avec <b>suivi en temps réel</b> et intégration fluide sur plusieurs plateformes.",
-                            "tags": ["React Native", "Livraison", "Suivi"]
+                            "text": "Une <b>gem Rails</b> open source pour la journalisation d'audit automatique des modèles. Enregistre <b>qui a modifié quoi et quand</b> avec suivi des différences, intégration Devise et support PostgreSQL JSONB.",
+                            "tags": ["Ruby Gem", "Open Source", "PostgreSQL", "Devise"]
                         },
                         "ko": {
-                            "title": "QuickDrop",
-                            "text": "<b>React Native</b>와 <b>Node.js</b> 백엔드로 구축된 크로스플랫폼 배송 앱으로, <b>실시간 추적</b> 및 여러 플랫폼과의 원활한 통합을 제공합니다.",
-                            "tags": ["React Native", "배송", "실시간 추적"]
+                            "text": "자동 모델 감사 로깅을 위한 오픈소스 <b>Rails 젬</b>. 차이 추적을 통해 <b>누가 언제 무엇을 변경했는지</b>를 기록하고, Devise와 통합되며 빠른 쿼리를 위한 PostgreSQL JSONB를 지원합니다.",
+                            "tags": ["Ruby Gem", "오픈소스", "PostgreSQL", "Devise"]
                         }
                     }
                 }

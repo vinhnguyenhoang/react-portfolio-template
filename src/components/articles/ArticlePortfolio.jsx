@@ -1,5 +1,5 @@
 import "./ArticlePortfolio.scss"
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import Article from "/src/components/articles/base/Article.jsx"
 import Transitionable from "/src/components/capabilities/Transitionable.jsx"
 import {useViewport} from "/src/providers/ViewportProvider.jsx"
@@ -8,6 +8,7 @@ import AvatarView from "/src/components/generic/AvatarView.jsx"
 import {Tag, Tags} from "/src/components/generic/Tags.jsx"
 import ArticleItemPreviewMenu from "/src/components/articles/partials/ArticleItemPreviewMenu.jsx"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
+import {usePortfolioSearch} from "/src/hooks/usePortfolioSearch.js"
 
 /**
  * @param {ArticleDataWrapper} dataWrapper
@@ -42,28 +43,60 @@ function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId }) {
     const language = useLanguage()
     const viewport = useViewport()
 
-    const filteredItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
+    // Category filter (existing logic)
+    const categoryFilteredItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
+
+    // Live search filter (new)
+    const { filteredItems, searchQuery, debouncedQuery, setSearchQuery, clearSearch } =
+        usePortfolioSearch(categoryFilteredItems, selectedItemCategoryId)
+
     const customBreakpoint = viewport.getCustomBreakpoint(constants.SWIPER_BREAKPOINTS_FOR_THREE_SLIDES)
 
     const itemsPerRow = customBreakpoint?.slidesPerView || 1
     const itemsPerRowClass = `article-portfolio-items-${itemsPerRow}-per-row`
 
+    // Include searchQuery so Transitionable re-animates on search change
     const refreshFlag = dataWrapper.categories?.length ?
-        selectedItemCategoryId + "-" + language.getSelectedLanguage()?.id :
+        `${selectedItemCategoryId}-${language.getSelectedLanguage()?.id}-${searchQuery}` :
         language.getSelectedLanguage()?.id
 
-    if(dataWrapper.categories?.length) {
+    const hasCategories = Boolean(dataWrapper.categories?.length)
+
+    // Empty state: gate on debouncedQuery (not searchQuery) to avoid 300ms flash on each keystroke
+    if(hasCategories && debouncedQuery !== '' && filteredItems.length === 0) {
         return (
-            <Transitionable id={dataWrapper.uniqueId}
-                            refreshFlag={refreshFlag}
-                            delayBetweenItems={100}
-                            animation={Transitionable.Animations.POP}
-                            className={`article-portfolio-items ${itemsPerRowClass}`}>
-                {filteredItems.map((itemWrapper, key) => (
-                    <ArticlePortfolioItem itemWrapper={itemWrapper}
-                                          key={key}/>
-                ))}
-            </Transitionable>
+            <>
+                <ArticlePortfolioSearchBar
+                    searchQuery={searchQuery}
+                    onSearchChange={setSearchQuery}
+                    onClearSearch={clearSearch}
+                    resultsCount={0}
+                />
+                <ArticlePortfolioEmptyState searchQuery={searchQuery} onClear={clearSearch} />
+            </>
+        )
+    }
+
+    if(hasCategories) {
+        return (
+            <>
+                <ArticlePortfolioSearchBar
+                    searchQuery={searchQuery}
+                    onSearchChange={setSearchQuery}
+                    onClearSearch={clearSearch}
+                    resultsCount={filteredItems.length}
+                />
+                <Transitionable id={dataWrapper.uniqueId}
+                                refreshFlag={refreshFlag}
+                                delayBetweenItems={100}
+                                animation={Transitionable.Animations.POP}
+                                className={`article-portfolio-items ${itemsPerRowClass}`}>
+                    {filteredItems.map((itemWrapper, key) => (
+                        <ArticlePortfolioItem itemWrapper={itemWrapper}
+                                              key={key}/>
+                    ))}
+                </Transitionable>
+            </>
         )
     }
     else {
@@ -76,6 +109,84 @@ function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId }) {
             </div>
         )
     }
+}
+
+/**
+ * Search bar component for the portfolio section.
+ * @param {string} searchQuery
+ * @param {Function} onSearchChange
+ * @param {Function} onClearSearch
+ * @param {number} resultsCount
+ * @return {JSX.Element}
+ * @constructor
+ */
+function ArticlePortfolioSearchBar({ searchQuery, onSearchChange, onClearSearch, resultsCount }) {
+    const inputRef = useRef(null)
+
+    const handleClear = () => {
+        onClearSearch()
+        inputRef.current?.focus()
+    }
+
+    return (
+        <div className="article-portfolio-search">
+            <label htmlFor="portfolio-search-input" className="sr-only">
+                Search projects
+            </label>
+            <i className="fa-solid fa-magnifying-glass article-portfolio-search-icon" aria-hidden="true" />
+            <input
+                id="portfolio-search-input"
+                ref={inputRef}
+                type="text"
+                className="article-portfolio-search-input"
+                placeholder="Search by title, tag, or description..."
+                value={searchQuery}
+                onChange={e => onSearchChange(e.target.value)}
+            />
+            {searchQuery && (
+                <button
+                    className="article-portfolio-search-clear"
+                    onClick={handleClear}
+                    aria-label="Clear search"
+                    type="button"
+                >
+                    <i className="fa-solid fa-xmark" aria-hidden="true" />
+                </button>
+            )}
+            <div
+                className="article-portfolio-search-results-sr"
+                aria-live="polite"
+                aria-atomic="true"
+            >
+                {searchQuery && `${resultsCount} project(s) found`}
+            </div>
+        </div>
+    )
+}
+
+/**
+ * Empty state shown when search returns no results.
+ * @param {string} searchQuery
+ * @param {Function} onClear
+ * @return {JSX.Element}
+ * @constructor
+ */
+function ArticlePortfolioEmptyState({ searchQuery, onClear }) {
+    return (
+        <div className="article-portfolio-empty-state">
+            <div className="article-portfolio-empty-state-icon">🔍</div>
+            <p className="article-portfolio-empty-state-text">
+                No results for <strong>&ldquo;{searchQuery}&rdquo;</strong>
+            </p>
+            <button
+                className="btn btn-sm btn-outline-secondary mt-2"
+                onClick={onClear}
+                type="button"
+            >
+                Clear search
+            </button>
+        </div>
+    )
 }
 
 /**
