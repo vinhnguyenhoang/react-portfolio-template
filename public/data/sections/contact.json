@@ -82,10 +82,48 @@
             "items": [
                 {
                     "id": 1,
+                    "faIcon": "fa-solid fa-envelope",
+                    "faIconColors": { "bg": "", "fill": "" },
+                    "label": "vinhnh@zigexn.vn",
+                    "link": {"href": "mailto:vinhnh@zigexn.vn", "tooltipString": "email_me"},
+                    "copyToClipboardButton": true,
+                    "locales": {
+                        "en": {"title": "Work E-mail"},
+                        "es": {"title": "Correo de trabajo"},
+                        "fr": {"title": "E-mail professionnel"},
+                        "ko": {"title": "업무 이메일"}
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-brands fa-github",
+                    "faIconColors": { "bg": "", "fill": "" },
+                    "label": "@vinhnh",
+                    "link": {"href": "https://github.com/vinhnh", "tooltipString": "see_on_github"},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {"title": "GitHub"},
+                        "ko": {"title": "깃허브"}
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-brands fa-linkedin",
+                    "faIconColors": { "bg": "", "fill": "" },
+                    "label": "@vinhnh",
+                    "link": {"href": "https://linkedin.com/in/vinhnh", "tooltipString": "open_website"},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {"title": "LinkedIn"},
+                        "ko": {"title": "링크드인"}
+                    }
+                },
+                {
+                    "id": 4,
                     "faIcon": "fa-solid fa-phone",
                     "faIconColors": { "bg": "", "fill": "" },
-                    "label": "+1 (123) 456-7890",
-                    "link": {"href": "tel:11234567890", "tooltipString": "call_me"},
+                    "label": "+84 (0) 912 345 678",
+                    "link": {"href": "tel:840912345678", "tooltipString": "call_me"},
                     "copyToClipboardButton": true,
                     "locales": {
                         "en": {"title": "Phone"},
@@ -95,35 +133,11 @@
                     }
                 },
                 {
-                    "id":2,
-                    "faIcon": "fa-solid fa-envelope",
-                    "faIconColors": { "bg": "", "fill": "" },
-                    "label": "mark.choi@email.com",
-                    "link": {"href": "mailto:mark.choi@email.com", "tooltipString": "email_me"},
-                    "copyToClipboardButton": true,
-                    "locales": {
-                        "en": {"title": "E-mail"},
-                        "ko": {"title": "이메일"}
-                    }
-                },
-                {
-                    "id": 3,
-                    "faIcon": "fa-brands fa-linkedin",
-                    "faIconColors": { "bg": "", "fill": "" },
-                    "label": "@markchoi",
-                    "link": {"href": "https://linkedin.com/in/", "tooltipString": "open_website"},
-                    "copyToClipboardButton": false,
-                    "locales": {
-                        "en": {"title": "LinkedIn"},
-                        "ko": {"title": "링크드인"}
-                    }
-                },
-                {
-                    "id": 4,
+                    "id": 5,
                     "faIcon": "fa-brands fa-facebook",
                     "faIconColors": { "bg": "", "fill": "" },
-                    "label": "Mark Choi",
-                    "link": {"href": "https://facebook.com/profiles/mark.choi.855/default", "tooltipString": "open_website"},
+                    "label": "Nguyễn Hoàng Vinh",
+                    "link": {"href": "https://facebook.com/vinhnh", "tooltipString": "open_website"},
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {"title": "Facebook"},
@@ -131,27 +145,17 @@
                     }
                 },
                 {
-                    "id": 5,
-                    "faIcon": "fa-brands fa-instagram",
-                    "faIconColors": { "bg": "", "fill": "" },
-                    "label": "@codingmark",
-                    "link": {"href": "https://instagram.com/", "tooltipString": "open_website"},
-                    "copyToClipboardButton": false,
-                    "locales": {
-                        "en": {"title": "Instagram"},
-                        "ko": {"title": "인스타그램"}
-                    }
-                },
-                {
                     "id": 6,
-                    "faIcon": "fa-brands fa-tiktok",
+                    "faIcon": "fa-solid fa-map-marker-alt",
                     "faIconColors": { "bg": "", "fill": "" },
-                    "label": "@markchoi",
-                    "link": {"href": "https://tiktok.com/@markchoi", "tooltipString": "open_website"},
+                    "label": "Ho Chi Minh City, Vietnam",
+                    "link": {"href": "", "tooltipString": ""},
                     "copyToClipboardButton": false,
                     "locales": {
-                        "en": { "title": "TikTok" },
-                        "ko": { "title": "틱톡" }
+                        "en": {"title": "Location"},
+                        "es": {"title": "Ubicación"},
+                        "fr": {"title": "Lieu"},
+                        "ko": {"title": "위치"}
                     }
                 }
             ]
