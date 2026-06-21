@@ -31,7 +31,7 @@ describe('usePortfolioSearch', () => {
 
     test('returns all items when search query is empty', () => {
         const { result } = renderHook(() => usePortfolioSearch(mockItems, null))
-        expect(result.current.filteredItems).toHaveLength(99) // intentional fail
+        expect(result.current.filteredItems).toHaveLength(mockItems.length)
         expect(result.current.searchQuery).toBe('')
     })
 
