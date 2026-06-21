@@ -83,4 +83,14 @@ describe('usePortfolioSearch', () => {
         expect(result.current.searchQuery).toBe('')
         expect(result.current.filteredItems).toHaveLength(mockItems.length)
     })
+
+    test('filters items by tag after 300ms debounce', () => {
+        const { result } = renderHook(() => usePortfolioSearch(mockItems, null))
+
+        act(() => { result.current.setSearchQuery('PostgreSQL') })
+        act(() => { vi.advanceTimersByTime(300) })
+
+        expect(result.current.filteredItems).toHaveLength(1)
+        expect(result.current.filteredItems[0].locales.title).toBe('RailsShop')
+    })
 })
